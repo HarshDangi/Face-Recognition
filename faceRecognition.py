@@ -51,8 +51,8 @@ for fx in os.listdir(dataPath):
 		classID += 1
 		labels.append(target)
 
-	faceDataset = np.concatenate(faceData,axis=0)
-	faceLabels = np.concatenate(labels,axis=0).reshape((-1,1))
+faceDataset = np.concatenate(faceData,axis=0)
+faceLabels = np.concatenate(labels,axis=0).reshape((-1,1))
 
 print(faceDataset.shape)
 print(faceLabels.shape)
